@@ -1,6 +1,6 @@
-Ultra lightweight "game engine" for developing interactive games / applications for Linux.
+Ultra lightweight shader driven "game engine" for developing interactive games / applications for Linux.
 It's really just a bunch of boilerplate code with the intention that it gives a clean enough starting point for developing 
-games / interactive applications using pure C on linux.
+games / interactive applications using pure C and GLSL on linux.
 
 All assets used in this repo are my own including the sound effects and "music."
 
