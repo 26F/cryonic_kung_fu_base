@@ -1,0 +1,16 @@
+Ultra lightweight "game engine" for developing interactive games / applications for Linux.
+It's really just a bunch of boilerplate code with the intention that it gives a clean enough starting point for developing 
+games / interactive applications using pure C on linux.
+
+All assets used in this repo are my own including the sound effects and "music."
+
+use:
+
+sudo apt-get install libsdl2-dev
+sudo apt-get install libsdl2-mixer-dev
+sudo apt-get install libglew-dev
+sudo apt-get install freeglut3-dev
+
+To create dependency graph of project
+sudo apt install makefile2graph
+make -Bnd | make2graph | dot -Tpng -o makefile.png
