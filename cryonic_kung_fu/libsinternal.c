@@ -42,21 +42,21 @@ sdl_t init(void)
 	assert(sdl.renderer);
 
 	// Sound effects and music are set here
-	assert(Mix_OpenAudio(48000, MIX_DEFAULT_FORMAT, 2, 2048) == 0);
+	//assert(Mix_OpenAudio(48000, MIX_DEFAULT_FORMAT, 2, 2048) == 0);
 
 	// An example of loading boss battle music for a game or difficult to use application.
-	sdl.menu_music.track = Mix_LoadMUS("./music/menu.wav");
-	sdl.menu_music.is_playing = false;
-	assert(sdl.menu_music.track);
+	//sdl.menu_music.track = Mix_LoadMUS("./music/menu.wav");
+	//sdl.menu_music.is_playing = false;
+	//assert(sdl.menu_music.track);
 
-	sdl.boss_battle.track = Mix_LoadMUS("./music/boss_battle.wav");
-	sdl.boss_battle.is_playing = false;
-	assert(sdl.boss_battle.track);
+	//sdl.boss_battle.track = Mix_LoadMUS("./music/boss_battle.wav");
+	//sdl.boss_battle.is_playing = false;
+	//assert(sdl.boss_battle.track);
 
 	// Example of loading a sound effect for use in a game or interactive application
-	sdl.gun_sfx1.sfx = Mix_LoadWAV("./sfx/shot_sfx.wav");
-	sdl.gun_sfx1.channel_id = 0;	
-	assert(sdl.gun_sfx1.sfx);
+	//sdl.gun_sfx1.sfx = Mix_LoadWAV("./sfx/shot_sfx.wav");
+	//sdl.gun_sfx1.channel_id = 0;	
+	//assert(sdl.gun_sfx1.sfx);
 
 	SDL_ShowCursor(0);
 
@@ -192,14 +192,14 @@ void sdlDestroyDelete(sdl_state_t* sdl_state)
 {
 
 	// free music
-	Mix_FreeMusic(sdl_state->sdl_p->menu_music.track);
-	Mix_FreeMusic(sdl_state->sdl_p->boss_battle.track);
+	//Mix_FreeMusic(sdl_state->sdl_p->menu_music.track);
+	//Mix_FreeMusic(sdl_state->sdl_p->boss_battle.track);
 
     // free sound effects
-	Mix_FreeChunk(sdl_state->sdl_p->gun_sfx1.sfx);
+	//Mix_FreeChunk(sdl_state->sdl_p->gun_sfx1.sfx);
 
 	// Close audio context
-	Mix_CloseAudio();
+	//Mix_CloseAudio();
 
 	glDeleteVertexArrays(1, &sdl_state->vabo_p->a_id);
 	glDeleteBuffers(1, &sdl_state->vabo_p->o_id);

@@ -69,7 +69,7 @@ int main(void)
     sdl_state.sdl_p = &sdlh;
     sdl_state.ticks = &state.tick_count;
 
-    play_music(sdlh.menu_music.track, &sdlh.menu_music.is_playing);
+    //play_music(sdlh.menu_music.track, &sdlh.menu_music.is_playing);
 
 	while (state.alive)
 	{
@@ -84,7 +84,7 @@ int main(void)
 		// update the game configuration, including uniforms
 		mutate(&configuration);
 
-		handle_audio(&configuration, &sdlh);
+		//handle_audio(&configuration, &sdlh);
 
 		draw_frame(&sdl_state);
 
