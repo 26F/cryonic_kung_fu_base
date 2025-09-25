@@ -1,8 +1,8 @@
 
 #ifndef ASCII_DISPLAY_DBG_H
 #define ASCII_DISPLAY_DBG_H
-
-#define DEBUG_YES_H
+// This should doesn't work and was done wrong so don't use it..
+//#define DEBUG_YES_H
 
 #include <SDL2/SDL.h>
 #include <assert.h>
